@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação - Desenvolvedor Back-end</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1f2937, #0d1117);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-weight: 400;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .skills, .projects {
+            margin-bottom: 50px;
+        }
+
+        .skills h3, .projects h3, .contact h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-left: 5px solid #58a6ff;
+            padding-left: 10px;
+        }
+
+        .skill-list, .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-5px);
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #58a6ff;
+            color: #0d1117;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1f6feb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+        <h1>Olá, eu sou um Desenvolvedor Back-end</h1>
+        <h2>Crio sistemas robustos, escaláveis e orientados à performance</h2>
+        <p>
+            Especialista em desenvolvimento de APIs, automações, microsserviços e integração de sistemas.
+            Busco sempre criar soluções tecnicamente sólidas, seguras e otimizadas.
+        </p>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank">Meu LinkedIn</a>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+
+        <!-- SKILLS -->
+        <section class="skills">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill-list">
+                <div class="card">✔ Node.js</div>
+                <div class="card">✔ PHP / Laravel</div>
+                <div class="card">✔ Python / Django</div>
+                <div class="card">✔ MySQL / PostgreSQL</div>
+                <div class="card">✔ MariaDB / phpMyAdmin</div>
+                <div class="card">✔ Docker / Linux</div>
+                <div class="card">✔ShellScript</div>
+                <div class="card">✔ APIs REST & Microservices</div>
+                <div class="card">✔ Clean Code & SOLID</div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects">
+            <h3>Projetos Recentes</h3>
+            <div class="project-list">
+                <div class="card">
+                    <h4>API de Autenticação JWT</h4>
+                    <p>Sistema seguro de login e controle de usuários com tokens.</p>
+                </div>
+                <div class="card">
+                    <h4>Microserviço de Pagamentos</h4>
+                    <p>Processamento de pagamentos com filas assíncronas.</p>
+                </div>
+                <div class="card">
+                    <h4>Dashboard de Dados</h4>
+                    <p>Integração com banco de dados e gráficos em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h3>Entre em Contato</h3>
+        <p>Quer conversar sobre projetos, oportunidades ou tecnologia?</p>
+        <a class="btn" href="mailto:seuemail@exemplo.com">Enviar Email</a>
+    </section>
+
+</body>
+</html>
